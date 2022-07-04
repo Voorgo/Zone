@@ -1,16 +1,18 @@
 import { NavLink } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
 
 const Header = () => {
   return (
     <header>
-      <nav className="bg-white w-full border-b border-[rgb(219, 219, 219)] fixed z-20">
+      <nav className="bg-white w-full fixed z-20 h-[110px] xs:h-max ">
         <div className="container flex flex-col max-w-7xl pb-4 pt-4 gap-2 mx-auto justify-between text-2xl h-max items-center px-8 xs:flex-row xs:h-[60px] xs:pb-0 xs:pt-0">
           <div>
             <NavLink to="/">
-              <h1 className="text-4xl font-cinzel">Zone</h1>
+              <h1 className="text-2xl font-cinzel xs:text-4xl">Zone</h1>
             </NavLink>
           </div>
-          <div>
+          <div className="text-lg xs:text-xl">
             <ul className="flex items-center justify-center gap-8">
               <li>
                 <NavLink
@@ -36,7 +38,13 @@ const Header = () => {
                   About
                 </NavLink>
               </li>
-              <li>Cart</li>
+              <li className="bg-black rounded-full p-3 w-[41px] h-[41px] flex items-center justify-center cursor-pointer transition-transform relative hover:scale-110">
+                <FontAwesomeIcon
+                  icon={faCartShopping}
+                  size="xs"
+                  color="white"
+                />
+              </li>
             </ul>
           </div>
         </div>
