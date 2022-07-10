@@ -6,6 +6,9 @@ import About from "./pages/About";
 import Provider from "./context/ProductsContext";
 import Cart from "./components/cart/Cart";
 import Shop from "./pages/Shop";
+import { products } from "./products/products";
+import ProductPage from "./pages/ProductPage";
+import { v4 } from "uuid";
 
 function App() {
   return (
@@ -17,6 +20,13 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/shop" element={<Shop />} />
+          {products.map((product) => (
+            <Route
+              key={v4()}
+              path={`/shop/${product.name.replace(/\s/g, "-")}`}
+              element={<ProductPage item={product} />}
+            />
+          ))}
         </Routes>
         <Footer />
       </Provider>
