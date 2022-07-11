@@ -1,14 +1,14 @@
 import { Route, Routes } from "react-router-dom";
-import Header from "./components/Header";
-import Home from "./pages/Home";
-import Footer from "./components/Footer";
-import About from "./pages/About";
-import Provider from "./context/ProductsContext";
+import { v4 } from "uuid";
 import Cart from "./components/cart/Cart";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
+import Provider from "./context/ProductsContext";
+import About from "./pages/About";
+import Home from "./pages/Home";
+import ProductPage from "./pages/ProductPage";
 import Shop from "./pages/Shop";
 import { products } from "./products/products";
-import ProductPage from "./pages/ProductPage";
-import { v4 } from "uuid";
 
 function App() {
   return (
