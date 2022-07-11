@@ -12,6 +12,11 @@ module.exports = {
       fontFamily: {
         cinzel: ["Cinzel Decorative", "cursive"],
       },
+      backgroundImage: {
+        closeBtn: "linear-gradient(to left, white 50%, red 50%)",
+        checkoutBtn: "linear-gradient(to left, white 50%, #23c920 50%)",
+        addButton: "linear-gradient(to left, black 50%, #d19b75 50%)",
+      },
     },
   },
   plugins: [],
