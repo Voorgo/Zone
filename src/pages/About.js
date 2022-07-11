@@ -1,7 +1,7 @@
 import { motion, useAnimation } from "framer-motion";
-import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
-import { fadeInRightAbout, fadeInLeftAbout } from "../animations/variants";
+import { useInView } from "react-intersection-observer";
+import { fadeInLeftAbout, fadeInRightAbout } from "../animations/variants";
 import Main from "../components/Main";
 
 const About = () => {

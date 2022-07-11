@@ -1,7 +1,8 @@
-import { NavLink } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { NavLink } from "react-router-dom";
 import { ItemsContext } from "../context/ProductsContext";
+import CartCounter from "./cart/CartCounter";
 
 const Header = () => {
   const { dispatch } = ItemsContext();
@@ -48,6 +49,7 @@ const Header = () => {
                 className="bg-black rounded-full p-3 w-[41px] h-[41px] flex items-center justify-center cursor-pointer transition-transform relative hover:scale-110"
                 onClick={openCart}
               >
+                <CartCounter />
                 <FontAwesomeIcon
                   icon={faCartShopping}
                   size="xs"
