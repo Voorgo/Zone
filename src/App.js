@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, Navigate } from "react-router-dom";
 import { v4 } from "uuid";
 import Cart from "./components/cart/Cart";
 import Footer from "./components/Footer";
@@ -17,13 +17,14 @@ function App() {
         <Header />
         <Cart />
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/shop" element={<Shop />} />
+          <Route path="/Zone" element={<Home />} />
+          <Route path="/Zone/about" element={<About />} />
+          <Route path="/" element={<Navigate to="/Fake-Store" replace />} />
+          <Route path="/Zone/shop" element={<Shop />} />
           {products.map((product) => (
             <Route
               key={v4()}
-              path={`/shop/${product.name.replace(/\s/g, "-")}`}
+              path={`/Zone/shop/${product.name.replace(/\s/g, "-")}`}
               element={<ProductPage item={product} />}
             />
           ))}

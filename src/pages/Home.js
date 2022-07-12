@@ -29,7 +29,7 @@ const Home = () => {
               </motion.div>
               <motion.div variants={fadeInRight}>
                 <Link
-                  to="/shop"
+                  to="/Zone/shop"
                   className="mt-5 bg-white w-[10rem]  py-2 flex justify-center items-center gap-3 cursor-pointer group text-black text-lg font-bold hover:bg-[#ff8900] hover:text-white  transition-all "
                 >
                   <span>SHOP NOW</span>
@@ -44,7 +44,7 @@ const Home = () => {
           </div>
           <div className="w-full h-full bg-neutral-900 opacity-60 z-10 absolute top-0 left-0"></div>
           <img
-            src="/images/store.jpg"
+            src={require("../images/store.jpg")}
             alt="store"
             className="absolute top-0 left-0 w-full h-full object-cover object-top transition transform ease-out duration-700 group-hover:scale-110 "
           />

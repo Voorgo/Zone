@@ -25,7 +25,7 @@ const About = () => {
       <section>
         <div className="h-[45rem] relative group overflow-hidden flex items-center justify-center px-4 lg:justify-end">
           <img
-            src="images/about.jpg"
+            src={require("../images/about.jpg")}
             alt="store"
             className="absolute top-0 left-0 w-full h-full object-cover object-top transition transform ease-out duration-700 group-hover:scale-110 "
           />
