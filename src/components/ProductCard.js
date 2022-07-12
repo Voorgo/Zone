@@ -4,7 +4,7 @@ const ProductCard = ({ item }) => {
   return (
     <div>
       <Link
-        to={`/shop/${item.name.replace(/\s/g, "-")}`}
+        to={`/Zone/shop/${item.name.replace(/\s/g, "-")}`}
         className="flex flex-col gap-4  "
       >
         <div className="h-[20rem] bg-[#f7f7f7] p-5 group flex items-center justify-center">

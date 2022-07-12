@@ -5,7 +5,7 @@ const InfoSection = () => {
         <div className="grow w-full h-1/2 flex items-center">
           <div className="w-1/3 h-full md:w-1/2 ">
             <img
-              src="images/info1.jpg"
+              src={require("../../images/info1.jpg")}
               className="w-full h-full object-cover"
               alt="model presentation"
             />
@@ -23,7 +23,7 @@ const InfoSection = () => {
         <div className="grow w-full h-1/2 flex items-center flex-row-reverse text-center ">
           <div className="w-1/3 h-full md:w-1/2">
             <img
-              src="images/info2.jpg"
+              src={require("../../images/info2.jpg")}
               className="w-full h-full object-cover"
               alt="model"
             />

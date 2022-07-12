@@ -52,7 +52,7 @@ const BestSellers = () => {
               key={v4()}
             >
               <Link
-                to={`/shop/${item.name.replace(/\s/g, "-")}`}
+                to={`/Zone/shop/${item.name.replace(/\s/g, "-")}`}
                 className=" relative w-full h-full flex flex-col items-center justify-center group"
               >
                 <p className="absolute z-20 hidden group-hover:block text-2xl text-white font-semibold text-center">

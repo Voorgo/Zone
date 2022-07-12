@@ -15,7 +15,7 @@ const Header = () => {
       <nav className="bg-white w-full fixed z-50 h-[110px] xs:h-max ">
         <div className="container flex flex-col max-w-7xl pb-4 pt-4 gap-2 mx-auto justify-between text-2xl h-max items-center px-8 xs:flex-row xs:h-[60px] xs:pb-0 xs:pt-0">
           <div>
-            <NavLink to="/">
+            <NavLink to="/Zone">
               <h1 className="text-2xl font-cinzel xs:text-4xl">Zone</h1>
             </NavLink>
           </div>
@@ -23,7 +23,7 @@ const Header = () => {
             <ul className="flex items-center justify-center gap-8">
               <li>
                 <NavLink
-                  to="/"
+                  to="/Zone"
                   className="relative after:content-[''] after:w-full after:absolute after:bottom-0 after:left-0 after:h-[2px] after:scale-x-0 after:bg-black after:transition-transform after:origin-bottom-right hover:after:origin-bottom-left hover:after:scale-x-100"
                 >
                   Home
@@ -31,7 +31,7 @@ const Header = () => {
               </li>
               <li>
                 <NavLink
-                  to="/shop"
+                  to="/Zone/shop"
                   className="relative after:content-[''] after:w-full after:absolute after:bottom-0 after:left-0 after:h-[2px] after:scale-x-0 after:bg-black after:transition-transform after:origin-bottom-right hover:after:origin-bottom-left hover:after:scale-x-100"
                 >
                   Shop
@@ -39,7 +39,7 @@ const Header = () => {
               </li>
               <li>
                 <NavLink
-                  to="/about"
+                  to="/Zone/about"
                   className="relative after:content-[''] after:w-full after:absolute after:bottom-0 after:left-0 after:h-[2px] after:scale-x-0 after:bg-black after:transition-transform after:origin-bottom-right hover:after:origin-bottom-left hover:after:scale-x-100"
                 >
                   About

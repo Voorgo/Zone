@@ -23,7 +23,7 @@ const Footer = () => {
       <div className="w-full h-full flex">
         <div className="flex flex-col gap-3 flex-[1_1] justify-center pl-5">
           <div className="text-xl font-semibold">Zone</div>
-          <Link to="/about" className="underline text-[#646464] text-base">
+          <Link to="/Zone/about" className="underline text-[#646464] text-base">
             About Us
           </Link>
           <div className="text-[#646464] text-base">FAQ</div>

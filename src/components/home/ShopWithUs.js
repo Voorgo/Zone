@@ -44,7 +44,7 @@ const ShopWithUs = () => {
           <div className="h-max">
             <div className="w-[16rem] h-[16rem] rounded-full overflow-hidden">
               <img
-                src="images/ethical.jpg"
+                src={require("../../images/ethical.jpg")}
                 alt="ethical"
                 className="w-full h-full object-cover"
               />
@@ -63,7 +63,7 @@ const ShopWithUs = () => {
           <div className="h-max">
             <div className="w-[16rem] h-[16rem] rounded-full overflow-hidden">
               <img
-                src="images/sustainable.jpg"
+                src={require("../../images/sustainable.jpg")}
                 alt="sustenaible"
                 className="w-full h-full object-cover"
               />
@@ -84,7 +84,7 @@ const ShopWithUs = () => {
           <div className="h-max">
             <div className="w-[16rem] h-[16rem] rounded-full overflow-hidden">
               <img
-                src="images/fashionable.jpg"
+                src={require("../../images/fashionable.jpg")}
                 alt="fashionable"
                 className="w-full h-full object-cover"
               />
