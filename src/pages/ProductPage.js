@@ -11,11 +11,11 @@ const ProductPage = ({ item }) => {
   }, []);
 
   return (
-    <div className="w-full h-[calc(100vh_-_194px)] flex flex-col items-center pb-2 pt-[120px] gap-10 px-4 xs:pt-[80px]">
+    <div className="w-full flex flex-col items-center pb-4 pt-[120px] gap-10 px-4 xs:pt-[80px] md:h-[calc(100vh_-_194px)]">
       <div className="max-w-[76rem] w-full font-semibold text-xl">
         <Link to="/Zone/shop">{"< Go Back"}</Link>
       </div>
-      <div className="flex items-center gap-4 grow flex-col-reverse  md:flex-row">
+      <div className="flex items-center gap-4 grow flex-col-reverse md:flex-row">
         <div className="h-[15rem] w-[18rem] relative grow flex items-center justify-center group cursor-pointer overflow-hidden md:h-[20rem] ">
           <img
             src={item.image}
