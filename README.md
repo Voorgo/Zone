@@ -4,7 +4,7 @@
 
 A clothing web-shop made from scratch using react.
 
-## [Live](voorgo.github.io/zone/)
+## [Live](https://voorgo.github.io/Zone)
 
 ## Build with :
 
